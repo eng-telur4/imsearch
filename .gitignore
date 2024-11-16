@@ -3,3 +3,4 @@ src/image_data
 src/anaconda.sh
 src/efficientnetb0_embeddings.pkl
 src/japanese_stable_clip_embeddings.pkl
+**/__pycache__/
