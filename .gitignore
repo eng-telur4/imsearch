@@ -1,3 +1,4 @@
+.gitignore
 src/.env
 src/image_data
 src/anaconda.sh
