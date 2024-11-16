@@ -1,0 +1,31 @@
+# PostgreSQL接続
+psycopg2
+
+# 画像のベクトル化
+opencv-python
+matplotlib
+faiss-cpu
+numpy
+tensorflow
+tqdm
+
+# サンプルコード(コード上でインポートされてたもの)
+oci
+ftfy
+torch
+torchvision
+spaces
+cohere
+oracledb
+gradio
+huggingface_hub
+python-dotenv
+transformers
+# サンプルコード(コード上でインポートされてないもの)
+qwen-vl-utils
+sentencepiece
+accelerate
+protobuf
+pillow
+# サンプルコード(コード上でインポートされているがrequirements.txtに記述がないもの)
+pypng

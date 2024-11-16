@@ -1,0 +1,41 @@
+{
+    "name": "pgvector-env",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",                 // Python
+                "aaron-bond.better-comments",       // Better Comments
+                "oderwat.indent-rainbow",           // indent-rainbow
+                "vscode-icons-team.vscode-icons",   // vscode-icons
+                "ms-python.black-formatter",        // Black Formatter
+                "yzhang.markdown-all-in-one",       // Markdown All in One
+                "ms-toolsai.jupyter",               // Jupyter
+                "mechatroner.rainbow-csv",          // Rainbow CSV
+            ],
+            "settings": {
+                "editor.renderWhitespace": "boundary",
+                "explorer.compactFolders": false,
+                "workbench.iconTheme": "vscode-icons",
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "ms-python.black-formatter",
+                "notebook.formatOnSave.enabled": true,
+                "notebook.formatOnCellExecution": true,
+                "notebook.defaultFormatter": "ms-python.black-formatter",
+                "python.defaultInterpreterPath": "~/anaconda3/envs/pgvector-env/bin/python",
+                "notebook.output.scrolling": true,
+                "notebook.output.textLineLimit": 10,
+            }
+        }
+    },
+    "workspaceFolder": "/usr/src/app",
+    "runArgs": [
+        "--cpus=8",
+        "--memory=8g",
+        "--memory-swap=16g",
+        // "--gpus",
+        // "all"
+    ]
+}
