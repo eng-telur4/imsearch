@@ -81,11 +81,11 @@ RUN sudo chown -R dev-user:dev-user /var/lib/postgresql/data && \
         sleep 1; \
     done && \
     /usr/lib/postgresql/15/bin/psql -d postgres -c "CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD 'y6KDgfg9';" && \
-    psql -U postgres -d postgres -f ./setup.sql
+    psql -U postgres -d postgres -f ./setup.sql && \
+    source activate pgvector-env && \
+    python register_images.py
 
 RUN echo "pgrep -x postgres > /dev/null || /usr/lib/postgresql/15/bin/postgres -D /var/lib/postgresql/data & sleep 1" >> ~/.bashrc
-
-RUN bash -l && source activate pgvector-env &&  python register_images.py
 
 CMD ["bash", "-l"]
 
